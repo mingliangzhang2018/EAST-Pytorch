@@ -76,7 +76,7 @@ python eval.py
 ```
 python compute_hmean.py
 ```
-*Note: The result will show in the screen, also record in `.\dataset\test_compute_hmean\log_epoch_hmean.txt` *
+*Note: The result will show in the screen, also record in `.\dataset\test_compute_hmean\log_epoch_hmean.txt`*
 
 
 ### Examples
