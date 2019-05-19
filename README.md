@@ -73,7 +73,7 @@ a text file will be then written to the output path.
 ### Examples
 Here are some test examples on icdar2015, enjoy the beautiful text boxes!
 ![image_1](demo/result_img/img_1.jpg)
-![image_1](demo/result_img/img_2.jpg)
+![image_2](demo/result_img/img_2.jpg)
 
 Please let me know if you encounter any issues(my email zhangmingliang2018@ia.ac.cn).
 
