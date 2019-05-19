@@ -1,0 +1,1 @@
+Put backbone net in this folder such as resnet or mobilenet.
