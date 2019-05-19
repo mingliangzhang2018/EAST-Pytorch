@@ -37,13 +37,13 @@ This project provide some files for train, test and compute hmean [BaiduYun link
 
 1. **backbone_net**: 
 	The folder contains pretrained backbone net of Mobilenet-v2 / ResNet-50 which should put into 	  `.\tmp\backbone_net`
-2. **pretrain-model-EAST**:
+2. **pretrain-model-EAST**: 
 	The folder contains pretrained Model of EAST which should put into `.\tmp`
-3. **train-dataset-ICDAR15,13**:
+3. **train-dataset-ICDAR15,13**: 
 	The folder contains train dataset of ICDAR15,13 which should put into `.\dataset\train`
-4. **test-dataset-ICDAR15**:
+4. **test-dataset-ICDAR15**: 
 	The folder contains test dataset of ICDAR15 which should put into `.\dataset\test`
-5. **test-groudtruth-ICDAR15**:
+5. **test-groudtruth-ICDAR15**: 
 	The folder contains groundtruth labels of test dataset ICDAR15 which should put into `.\dataset\test_compute_hmean`
 
 
@@ -94,6 +94,7 @@ Here are some test examples on icdar2015, enjoy the beautiful text boxes!
 
 ![image_1](demo/result_img/img_1.jpg)
 ![image_2](demo/result_img/img_2.jpg)
+![image_3](demo/result_img/img_3.jpg)
 
 Please let me know if you encounter any issues(my email zhangmingliang2018@ia.ac.cn).
 
