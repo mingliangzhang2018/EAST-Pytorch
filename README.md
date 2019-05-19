@@ -81,6 +81,7 @@ python compute_hmean.py
 
 ### Examples
 Here are some test examples on icdar2015, enjoy the beautiful text boxes!
+
 ![image_1](demo/result_img/img_1.jpg)
 ![image_2](demo/result_img/img_2.jpg)
 
