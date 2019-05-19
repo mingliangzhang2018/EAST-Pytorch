@@ -1,5 +1,5 @@
-torch
-torchvision
-shapely
-opencv
+torch=0.4.1
+torchvision=0.2.1
+shapely=1.6.4.post1
+opencv=3.4.2
 tensorboardX
