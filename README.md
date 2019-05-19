@@ -38,7 +38,7 @@ This project provide some files for train, test and compute hmean [BaiduYun link
 1. **backbone_net**: 
 	The folder contains pretrained backbone net of Mobilenet-v2 / ResNet-50 which should put into 	  `.\tmp\backbone_net`
 2. **pretrain-model-EAST**: 
-	The folder contains pretrained Model of EAST which should put into `.\tmp`
+	The folder contains pretrained Model of EAST which should put into `.\tmp`, you should also change files `model.py` and `train.py`
 3. **train-dataset-ICDAR15,13**: 
 	The folder contains train dataset of ICDAR15,13 which should put into `.\dataset\train`
 4. **test-dataset-ICDAR15**: 
