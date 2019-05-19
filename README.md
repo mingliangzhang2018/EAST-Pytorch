@@ -33,7 +33,7 @@ Thanks for the code of authors ([@argman](https://github.com/argman)) and ([@son
 2. Other librarys are instructed in `requirements.txt`.
 
 ### Download
-This project provide some files for train, test and compute hmean [BaiduYun link](https://pan.baidu.com/s/12hZl3rw6KxiAgI8RJuKsAQ),keyword is 593p:
+This project provide some files for train, test and compute hmean [BaiduYun link](https://pan.baidu.com/s/12hZl3rw6KxiAgI8RJuKsAQ), keyword is 593p:
 
 1. **backbone_net**: 
 	The folder contains pretrained backbone net of Mobilenet-v2 / ResNet-50 which should put into 	  `.\tmp\backbone_net`
