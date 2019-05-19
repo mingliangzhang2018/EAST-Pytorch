@@ -12,13 +12,12 @@ The features are summarized blow:
 + Every parameter is written in `config.py`, you should change it before you run this project
 + The pre-trained model byprovided achieves ( Mobilenet-v2-**75.01**, ResNet-50-**81.63**) F1-score on ICDAR 2015
 + Speed on 720p (resolution of 1280x720) images:
-     + Now
-          + Graphic card: GTX 1080 Ti
-          + Network fprop: **~50 ms**
-          + NMS (Python): **~6ms**
-          + Overall: **~16 fps**
+	+ Graphic card: GTX 1080 Ti
+	+ Network fprop: **~50 ms**/**~50 ms**
+	+ NMS (Python): **~6ms**/**~6ms**
+	+ Overall: **~16 fps**/**~16 fps**
 
-Thanks for the code of authors ([@argman](https://github.com/argman)) and ([@songdejia](https://github.com/songdejia))
+Thanks for the code of authors ([@argman](https://github.com/argman)) and ([@songdejia](https://github.com/songdejia)), thank for the help of my partner Wei Baolei, Yang Yirong, Liu Hao, Wang Wei and Ma Yuting.
 
 ### Contents
 1. [Installation](#installation)
@@ -34,9 +33,19 @@ Thanks for the code of authors ([@argman](https://github.com/argman)) and ([@son
 2. Other librarys are instructed in `requirements.txt`.
 
 ### Download
+This project provide some files for train, test and compute hmean [BaiduYun link](http://pan.baidu.com/s/1jHWDrYQ):
 
-1. Models trained on ICDAR 2013 (training set) + ICDAR 2015 (training set): [BaiduYun link](http://pan.baidu.com/s/1jHWDrYQ)
-2. Mobilenet-v2 and Resnet V1 50  are provided by : [BaiduYun link](http://download.tensorflow.org/models/resnet_v1_50_2016_08_28.tar.gz)
+1. backbone_net: 
+	The folder contains pretrained backbone net of Mobilenet-v2 / ResNet-50 which should put into 	  `.\tmp\backbone_net`
+2. pretrain-model-EAST:
+	The folder contains pretrained Model of EAST which should put into `.\tmp`
+3. train-dataset-ICDAR15,13:
+	The folder contains train dataset of ICDAR15,13 which should put into `.\dataset\train`
+4. test-dataset-ICDAR15:
+	The folder contains test dataset of ICDAR15 which should put into `.\dataset\test`
+5. test-groudtruth-ICDAR15
+	The folder contains groundtruth labels of test dataset ICDAR15 which should put into `.\dataset\test_compute_hmean`
+
 
 ### Train
 If you want to train the model, you should change `config.py` parameter. 
