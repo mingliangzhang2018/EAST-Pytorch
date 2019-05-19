@@ -13,7 +13,7 @@ The features are summarized blow:
 + The pre-trained model byprovided achieves ( Mobilenet-v2-**75.01**, ResNet-50-**81.63**) F1-score on ICDAR 2015
 + Speed on 720p (resolution of 1280x720) images:
 	+ Graphic card: GTX 1080 Ti
-	+ Network fprop: **~50 ms**/**~50 ms**
+	+ Network fprop: **~13 ms**/**~50 ms**
 	+ NMS (Python): **~6ms**/**~6ms**
 	+ Overall: **~16 fps**/**~16 fps**
 
@@ -90,7 +90,7 @@ python compute_hmean.py
 
 
 ### Examples
-Here are some test examples on icdar2015, enjoy the beautiful text boxes!
+Here are some test examples on icdar2015, enjoy the beautiful text boxes by mobilenet-v2 EAST!
 
 ![image_1](demo/result_img/img_1.jpg)
 ![image_2](demo/result_img/img_2.jpg)
