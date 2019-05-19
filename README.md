@@ -13,10 +13,10 @@ The features are summarized blow:
 + The pre-trained model byprovided achieves ( Mobilenet-v2-**75.01**, ResNet-50-**81.63**) F1-score on ICDAR 2015
 + Speed on 720p (resolution of 1280x720) images:
      + Now
-           + Graphic card: GTX 1080 Ti
-           + Network fprop: **~50 ms**
-           + NMS (Python): **~6ms**
-           + Overall: **~16 fps**
+          + Graphic card: GTX 1080 Ti
+          + Network fprop: **~50 ms**
+          + NMS (Python): **~6ms**
+          + Overall: **~16 fps**
 
 Thanks for the code of authors ([@argman](https://github.com/argman)) and ([@songdejia](https://github.com/songdejia))
 
