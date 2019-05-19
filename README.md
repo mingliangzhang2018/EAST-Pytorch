@@ -38,36 +38,45 @@ Thanks for the code of authors ([@argman](https://github.com/argman)) and ([@son
 2. Mobilenet-v2 and Resnet V1 50  are provided by : [BaiduYun link](http://download.tensorflow.org/models/resnet_v1_50_2016_08_28.tar.gz)
 
 ### Train
-If you want to train the model, you should provide the dataset path, in the dataset path, a separate gt text file should be provided for each image
-and run
-
+If you want to train the model, you should change `config.py` parameter. 
+1. `train_data_path` is the path of train dataset, put train dataset in this folder. 
+2. Depending on your hardware configuration, set parameters of `train_batch_size_per_gpu` `num_workers` `gpu_ids` and `gpu`. 
+3. Of course you should specify the pre-training model of backbone_net in `pretrained_basemodel_path` and `pretrained`. 
+4. If you want to resume the model of EAST, you should specify the path of `checkpoint` and `resume`. 
+5. On the other hand, you could also adjust the setting of other overparameters, such learning rate, weight decay, decay_steps and so on.
+6. Then run
 ```
 python train.py
 ```
-If you have more than one gpu, you can pass gpu ids to gpu_list(like --gpu_list=0,1,2,3)
-
-**Note: you should change the gt text file of icdar2015's filename to img_\*.txt instead of gt_img_\*.txt(or you can change the code in icdar.py), and some extra characters should be removed from the file.
-See the examples in training_samples/**
+*Note: you should change the train and test datasets format same as provided in this project, which the gt text files have same names as image files. In this project, only `.jpg` format image files is accepted. Of course, you can change the code of project.*
 
 ### Test
-run
+If you want to test the model, you should also change `config.py` parameter.
+1. `test_img_path` is the path of test dataset, put test dataset in this folder. `res_img_path` is the path of result which will saved result of images files and txt files.
+2. You should also specify the pretrained model in `checkpoint`.
+3. Then run
 ```
 python eval.py
 ```
-a text file will be then written to the output path.
+
 
 ### Demo
-If you've downloaded the pre-trained model, you can setup a demo server by
+If you only want to test some demos, you downloaded the pre-trained model provided in this project and change `config.py`
+1. Put demo images in `.\demo\test_img`, and specify the path of `test_img_path` and `res_img_path`, you will find result in `.\demo\result_img`
+2. You should also specify the pretrained model in `checkpoint`.
+3. Then run 
 ```
-python3 run_demo_server.py --checkpoint-path /tmp/east_icdar2015_resnet_v1_50_rbox/
+python eval.py
 ```
 
 ### Compute-hmean
-run
+1. put groudtruth of `gt.zip` in `.\dataset\test_compute_hmean`
+2. Change parameter of `config.py`, specify the path of `compute_hmean_path`
+3. Then run
 ```
 python compute_hmean.py
 ```
-a text file will be then written to the output path.
+*Note: The result will show in the screen, also record in `.\dataset\test_compute_hmean\log_epoch_hmean.txt` *
 
 
 ### Examples
