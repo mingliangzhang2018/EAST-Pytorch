@@ -31,9 +31,10 @@ Thanks for the code of authors ([@argman](https://github.com/argman)) and ([@son
 
 ### Installation
 1. Any version of pytorch version > 0.4.1 should be ok.
-2. Other library is instructed in `requirements.txt`.
+2. Other librarys are instructed in `requirements.txt`.
 
 ### Download
+
 1. Models trained on ICDAR 2013 (training set) + ICDAR 2015 (training set): [BaiduYun link](http://pan.baidu.com/s/1jHWDrYQ)
 2. Mobilenet-v2 and Resnet V1 50  are provided by : [BaiduYun link](http://download.tensorflow.org/models/resnet_v1_50_2016_08_28.tar.gz)
 
