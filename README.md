@@ -80,7 +80,7 @@ python eval.py
 ```
 
 ### Compute-hmean
-1. put groudtruth of `gt.zip` in `.\dataset\test_compute_hmean`
+1. Put groudtruth of `gt.zip` in `.\dataset\test_compute_hmean`
 2. Change parameter of `config.py`, specify the path of `compute_hmean_path`
 3. Then run
 ```
