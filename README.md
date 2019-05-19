@@ -10,12 +10,12 @@ The features are summarized blow:
      + Use dice loss (optimize IoU of segmentation) rather than balanced cross entropy
      + Use linear learning rate decay rather than staged learning rate decay
 + Every parameter is written in `config.py`, you should change it before you run this project
-+ The pre-trained model byprovided achieves ( Mobilenet-v2-**75.01**, ResNet-50-**81.63**) F1-score on ICDAR 2015
++ The pre-trained model byprovided achieves ( Mobilenet-v2-**75.05**, ResNet-50-**81.32**) F1-score on ICDAR 2015
 + Speed on 720p (resolution of 1280x720) images:
 	+ Graphic card: GTX 1080 Ti
-	+ Network fprop: **~13 ms**/**~50 ms**
-	+ NMS (Python): **~6ms**/**~6ms**
-	+ Overall: **~16 fps**/**~16 fps**
+	+ Network fprop: **~15 ms**/**~50 ms**
+	+ NMS (C++): **~6ms**/**~6ms**
+	+ Overall: **~43 fps**/**~16 fps**
 
 Thanks for the code of authors ([@argman](https://github.com/argman)) and ([@songdejia](https://github.com/songdejia)), thank for the help of my partner Wei Baolei, Yang Yirong, Liu Hao, Wang Wei and Ma Yuting.
 
