@@ -6,17 +6,17 @@ The features are summarized blow:
 + Only **RBOX** part is implemented.
 + Incidental Scene Text Detection Challenge using only training images from ICDAR 2015 and 2013.
 + Differences from original paper
- + Use Mobilenet-v2 / ResNet-50
- + Use dice loss (optimize IoU of segmentation) rather than balanced cross entropy
- + Use linear learning rate decay rather than staged learning rate decay
+     + Use Mobilenet-v2 / ResNet-50
+     + Use dice loss (optimize IoU of segmentation) rather than balanced cross entropy
+     + Use linear learning rate decay rather than staged learning rate decay
 + Every parameter is written in `config.py`, you should change it before you run this project
 + The pre-trained model byprovided achieves ( Mobilenet-v2-**75.01**, ResNet-50-**81.63**) F1-score on ICDAR 2015
 + Speed on 720p (resolution of 1280x720) images:
- + Now
-  + Graphic card: GTX 1080 Ti
-  + Network fprop: **~50 ms**
-  + NMS (Python): **~6ms**
-  + Overall: **~16 fps**
+     + Now
+           + Graphic card: GTX 1080 Ti
+           + Network fprop: **~50 ms**
+           + NMS (Python): **~6ms**
+           + Overall: **~16 fps**
 
 Thanks for the code of authors ([@argman](https://github.com/argman)) and ([@songdejia](https://github.com/songdejia))
 
