@@ -17,7 +17,7 @@ The features are summarized blow:
 	+ NMS (C++): **~6ms**/**~6ms**
 	+ Overall: **~43 fps**/**~16 fps**
 
-Thanks for the code of authors ([@argman](https://github.com/argman)) and ([@songdejia](https://github.com/songdejia)), thank for the help of my partner Wei Baolei, Yang Yirong, Liu Hao, Wang Wei and Ma Yuting.
+Thanks for the code of authors ([@argman](https://github.com/argman)) and ([@songdejia](https://github.com/songdejia)), thanks for the help of my partners Wei Baole, Yang Yirong, Liu Hao, Wang Wei and Ma Yuting.
 
 ### Contents
 1. [Installation](#installation)
